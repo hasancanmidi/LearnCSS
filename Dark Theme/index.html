@@ -1,12 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Pico Css</title>
+    <title>Dark Theme</title>
+    <style>
+    :root{
+        --green:#27ae60;
+        --blue:#3498db;
+        --dark:#2c3e50;
+        --yellow:#f1c40f;
+        --red:#c0392b;
+        --dark-blue:#2980b9;
+        --light-white:#ecf0f1;
+        --bg-color: var(--light-white);
+        --text-color: var(--dark-blue);
+    }
+    :root[data-theme="dark"]{
+        --bg-color: var(--dark);
+        --text-color:var(--light-white)
+    }
+    body{
+        background-color: var(--bg-color);
+        color: var(--text-color);
+    }
+    </style>
 </head>
 <body>
-    
+    <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+    <ul>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, cum?</li>
+        <li>Id veritatis alias non rerum ullam consequuntur culpa, nostrum iusto.</li>
+        <li>Ducimus rem non ab ipsum. Vero adipisci facilis velit ducimus!</li>
+        <li>Omnis perferendis quibusdam aspernatur corporis doloremque vero quidem molestiae explicabo.</li>
+        <li>Reiciendis culpa tempora doloremque! Alias perferendis minus omnis id ad!</li>
+        <li>Reiciendis aut neque nisi quis harum necessitatibus quia id quam.</li>
+        <li>Voluptas pariatur soluta recusandae ut provident magni quam libero vero.</li>
+        <li>Consectetur ratione, totam facilis hic commodi neque rerum soluta at?</li>
+    </ul>
 </body>
 </html>
