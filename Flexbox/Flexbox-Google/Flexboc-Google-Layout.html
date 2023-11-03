@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox-Google-Layout</title>
+</head>
+<style>
+    :root {
+        --green: #2ecc71;
+        --blue: 33498db;
+        --yellow: #f1c40f;
+        --red: #e74c3c;
+        --dark-blue: #34495e;
+        --midnight-blue: #2c3e50;
+        --light-white: #ecf0f1;
+        --silver: #bdc3c7;
+    }
+
+    body {
+        background-color: var(--silver);
+        margin: 0;
+        padding: 0;
+    }
+
+    .flex-container {
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .google h1{
+        font-size: 120px;
+        margin: 10px 0;
+    }
+
+    .item {
+        color: var(--light-white);
+        background: var(--dark-blue);
+    }
+    li{
+        list-style-type: none;
+    }
+    nav ul{
+        display: flex;
+        padding: 10px;
+        margin: 0;
+        justify-content: flex-end;
+    }
+    nav ul li{
+        margin-right: 10px;
+    }
+    nav ul li img{
+        border-radius: 100%;
+    }
+    .google{
+        text-align: center;
+        width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .footer{
+        background-color: #000000;
+        padding: 12px;
+
+    }
+    .footer-nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-list{
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    .list-item{
+        margin-right: 20px;
+    }
+</style>
+
+<body>
+    <div class="flex-container">
+        <div class="item">
+            <nav>
+                <ul>
+                    <li>Gmail</li>
+                    <li>Görseller</li>
+                    <li>Logo</li>
+                    <li><img src="https://lh3.googleusercontent.com/ogw/AKPQZvwmuk8nbBaOyOZbMZlBw_d0Hl4nTzfcFJXkCG8b-Q=s32-c-mo" alt=""></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="item">
+            <div class="google">
+                <h1>Google</h1>
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="item footer">
+            <div>
+                Türkiye
+            </div>
+            <hr>
+            <div class="footer-nav">
+                <ul class="footer-list">
+                    <li class="list-item">Hakkında</li>
+                    <li class="list-item">Reklam</li>
+                    <li class="list-item">İşletme</li>
+                    <li class="list-item">Arama Nasıl Çalışır ?</li>
+                </ul>
+                <ul class="footer-list">
+                    <li class="list-item">İklimle ilgili çalışmalarımızın son on yılı</li>
+                </ul>
+                <ul class="footer-list">
+                    <li class="list-item">Gizlilik</li>
+                    <li class="list-item">Şartlar</li>
+                    <li class="list-item">Ayarlar</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
